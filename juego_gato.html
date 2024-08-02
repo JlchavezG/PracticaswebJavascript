@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/juegoGato.css">
+    <title>Juego del Gato con JavasScript</title>
+</head>
+<body>
+    <h1>Juego de gato con JavaScript</h1>
+    <div>
+        <label for="Jugador1">Nombre del jugador 1 (x):</label>
+        <input type="text" id="Jugador1">
+        <label for="Jugador2">Nombre del jugador 2 (0):</label>
+        <input type="text" id="Jugador2">
+        <button onclick="inicioJuego()">Iniciar Juego</button>
+    </div>
+    <div class="tablero hidden" id="tablero">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <div class="hidden" id="message"></div>
+    <script src="js/juegoGato.js"></script>
+</body>
+</html>
