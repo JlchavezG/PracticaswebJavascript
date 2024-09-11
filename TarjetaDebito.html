@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/TarjetaDebito.css">
+    <title>Formulario Tarjeta de Débito o Crédito</title>
+</head>
+<body>
+    <div class="credit-card-form">
+        <div class="card-display" id="cardDisplay">
+            <div class="bank-name" id="bankName">Banco</div>
+            <div class="card-type" id="cardType">Visa / MasterCard</div>
+            <div class="card-number" id="cardNumber">#### #### #### ####</div>
+            <div class="card-holder" id="cardHolder">Nombre del Titular</div>
+            <div class="card-expiry">
+                <div class="expiry-label">Vence:</div>
+                <div class="expiry-date" id="expiryDate">MM/AA</div>
+            </div>
+        </div>
+        <form>
+            <label for="cardInput">Numero de Tarjeta</label>
+            <input type="text" id="cardInput" maxlength="16" placeholder="Ingrese su numero de tarjeta">
+
+            <label for="cardHolderInput">Nombre del Titular</label>
+            <input type="text" id="cardHolderInput" placeholder="Nombre como aparece en la tarjeta">
+
+            <label for="expiryInput">Fecha de vencimiento</label>
+            <input type="text" id="expiryInput" maxlength="5" placeholder="MM/AA">
+        </form>
+    </div>
+    <script src="js/TarjetaDebito.js"></script>
+</body>
+</html>
