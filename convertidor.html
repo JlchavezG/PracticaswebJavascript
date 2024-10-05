@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de sistema numerico</title>
+    <link rel="stylesheet" href="css/convertidor.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertidor de sistemas numericos</h1>
+        <div class="converter">
+            <label for="numberInput">Ingresa un numero:</label>
+            <input type="text" id="numberInput" placeholder="Ej: 10">
+
+            <label for="fromBase">De:</label>
+            <select id="fromBase">
+                <option value="10">Decimal</option>
+                <option value="8">Octal</option>
+                <option value="2">Binario</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+
+            <label for="toBase">A:</label>
+            <select id="toBase">
+                <option value="10">Decimal</option>
+                <option value="8">Octal</option>
+                <option value="2">Binario</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+            <button onclick="convertir()">Convertir</button>
+        </div>
+        <div class="result">
+            <h2>Resultado</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="js/convertidor.js"></script>
+</body>
+</html>
